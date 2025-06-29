@@ -15,6 +15,7 @@ import { feedSourceService } from '@/services/api/feedSourceService';
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const [feedSources, setFeedSources] = useState([]);
+  const [fetchingRss, setFetchingRss] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [filters, setFilters] = useState({
@@ -22,7 +23,6 @@ const Articles = () => {
     category: '',
     source: ''
   });
-
   const categories = ['Technology', 'Business', 'Finance', 'Environment', 'Science', 'Health'];
 
   const loadData = async () => {
@@ -61,6 +61,26 @@ const Articles = () => {
       source: ''
     });
   };
+const handleFetchRss = async () => {
+    setFetchingRss(true);
+    try {
+      const newArticles = await articleService.fetchAllRssFeeds();
+      if (newArticles.length > 0) {
+        setArticles(prev => {
+          const existingIds = new Set(prev.map(a => a.Id));
+          const uniqueNewArticles = newArticles.filter(a => !existingIds.has(a.Id));
+          return [...uniqueNewArticles, ...prev];
+        });
+        toast.success(`Fetched ${newArticles.length} new articles from RSS feeds`);
+      } else {
+        toast.info('No new articles found from RSS feeds');
+      }
+    } catch (err) {
+      toast.error(`Failed to fetch RSS feeds: ${err.message}`);
+    } finally {
+      setFetchingRss(false);
+    }
+  };
 
   const handleArticleClick = (article) => {
     // Open article in new tab
@@ -72,7 +92,6 @@ const Articles = () => {
   };
 
   const activeFiltersCount = Object.values(filters).filter(Boolean).length;
-
   if (loading) return <Loading type="table" />;
   if (error) return <Error message={error} onRetry={loadData} />;
 
@@ -84,12 +103,20 @@ const Articles = () => {
           <h1 className="text-2xl font-bold text-surface-900">Articles</h1>
           <p className="text-surface-600">Browse and filter aggregated news articles</p>
         </div>
-        <div className="flex items-center space-x-3">
+<div className="flex items-center space-x-3">
           {activeFiltersCount > 0 && (
             <Badge variant="info">
               {activeFiltersCount} filter{activeFiltersCount !== 1 ? 's' : ''} active
             </Badge>
           )}
+          <Button
+            variant="primary"
+            icon="Rss"
+            onClick={handleFetchRss}
+            disabled={fetchingRss}
+          >
+            {fetchingRss ? 'Fetching...' : 'Fetch News'}
+          </Button>
           <Button
             variant="outline"
             icon="RotateCcw"
