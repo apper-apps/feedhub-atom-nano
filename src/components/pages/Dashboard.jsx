@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import AppIcon from "@/components/ApperIcon";
 import StatusCard from "@/components/molecules/StatusCard";
-import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
-import AppIcon from "@/components/ui/AppIcon";
+import Loading from "@/components/ui/Loading";
+import { userService } from "@/services/api/userService";
 import { feedSourceService } from "@/services/api/feedSourceService";
 import { articleService } from "@/services/api/articleService";
-import { userService } from "@/services/api/userService";
 
 const Dashboard = () => {
   const [stats, setStats] = useState({
