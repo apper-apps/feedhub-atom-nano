@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "url": "https://techcrunch.com/feed/",
+    "name": "TechCrunch",
+    "isActive": true,
+    "lastFetch": "2024-01-15T10:30:00Z",
+    "fetchInterval": 30,
+    "status": "active",
+    "articleCount": 145
+  },
+  {
+    "Id": 2,
+    "url": "https://feeds.bbci.co.uk/news/rss.xml",
+    "name": "BBC News",
+    "isActive": true,
+    "lastFetch": "2024-01-15T10:25:00Z",
+    "fetchInterval": 15,
+    "status": "active",
+    "articleCount": 89
+  },
+  {
+    "Id": 3,
+    "url": "https://rss.cnn.com/rss/edition.rss",
+    "name": "CNN",
+    "isActive": false,
+    "lastFetch": "2024-01-15T09:45:00Z",
+    "fetchInterval": 20,
+    "status": "inactive",
+    "articleCount": 67
+  },
+  {
+    "Id": 4,
+    "url": "https://feeds.reuters.com/reuters/topNews",
+    "name": "Reuters",
+    "isActive": true,
+    "lastFetch": "2024-01-15T10:35:00Z",
+    "fetchInterval": 25,
+    "status": "active",
+    "articleCount": 203
+  },
+  {
+    "Id": 5,
+    "url": "https://www.theverge.com/rss/index.xml",
+    "name": "The Verge",
+    "isActive": true,
+    "lastFetch": "2024-01-15T10:20:00Z",
+    "fetchInterval": 45,
+    "status": "error",
+    "articleCount": 78
+  }
+]

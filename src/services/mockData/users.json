@@ -1,0 +1,57 @@
+[
+  {
+    "Id": 1,
+    "email": "john.doe@example.com",
+    "name": "John Doe",
+    "role": "user",
+    "isApproved": true,
+    "assignedFilters": [1, 3],
+    "apiKey": "ak_1234567890abcdef",
+    "registrationDate": "2024-01-12T10:00:00Z",
+    "lastActive": "2024-01-15T09:30:00Z"
+  },
+  {
+    "Id": 2,
+    "email": "jane.smith@company.com",
+    "name": "Jane Smith",
+    "role": "user",
+    "isApproved": true,
+    "assignedFilters": [1, 2],
+    "apiKey": "ak_abcdef1234567890",
+    "registrationDate": "2024-01-10T14:20:00Z",
+    "lastActive": "2024-01-15T08:45:00Z"
+  },
+  {
+    "Id": 3,
+    "email": "pending.user@test.com",
+    "name": "Pending User",
+    "role": "user",
+    "isApproved": false,
+    "assignedFilters": [],
+    "apiKey": null,
+    "registrationDate": "2024-01-15T07:30:00Z",
+    "lastActive": null
+  },
+  {
+    "Id": 4,
+    "email": "admin@feedhub.com",
+    "name": "Admin User",
+    "role": "admin",
+    "isApproved": true,
+    "assignedFilters": [1, 2, 3],
+    "apiKey": "ak_admin123456789",
+    "registrationDate": "2024-01-01T00:00:00Z",
+    "lastActive": "2024-01-15T10:35:00Z"
+  },
+  {
+    "Id": 5,
+    "email": "analyst@research.org",
+    "name": "Research Analyst",
+    "role": "user",
+    "isApproved": true,
+    "assignedFilters": [2, 3],
+    "apiKey": "ak_research987654321",
+    "registrationDate": "2024-01-08T16:45:00Z",
+    "lastActive": "2024-01-15T06:20:00Z"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "Id": 1,
+    "name": "N8N Integration",
+    "url": "https://n8n.company.com/webhook/news-feed",
+    "events": ["article.published", "article.updated"],
+    "filters": [1, 2],
+    "isActive": true,
+    "lastTriggered": "2024-01-15T10:15:00Z",
+    "successCount": 145,
+    "errorCount": 2
+  },
+  {
+    "Id": 2,
+    "name": "Slack Notifications",
+    "url": "https://hooks.slack.com/services/T123/B456/xyz789",
+    "events": ["article.published"],
+    "filters": [1],
+    "isActive": true,
+    "lastTriggered": "2024-01-15T09:30:00Z",
+    "successCount": 89,
+    "errorCount": 0
+  },
+  {
+    "Id": 3,
+    "name": "Analytics Service",
+    "url": "https://analytics.service.com/api/webhook",
+    "events": ["article.published", "filter.applied"],
+    "filters": [2, 3],
+    "isActive": false,
+    "lastTriggered": "2024-01-14T18:20:00Z",
+    "successCount": 67,
+    "errorCount": 5
+  }
+]

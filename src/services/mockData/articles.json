@@ -1,0 +1,80 @@
+[
+  {
+    "Id": 1,
+    "sourceId": 1,
+    "sourceName": "TechCrunch",
+    "title": "AI startup raises $50M in Series B funding",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "summary": "AI startup secures significant funding for expansion",
+    "publishDate": "2024-01-15T09:30:00Z",
+    "author": "Sarah Johnson",
+    "tags": ["AI", "funding", "startup"],
+    "category": "Technology",
+    "url": "https://techcrunch.com/article-1"
+  },
+  {
+    "Id": 2,
+    "sourceId": 2,
+    "sourceName": "BBC News",
+    "title": "Global climate summit reaches historic agreement",
+    "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "summary": "World leaders agree on new climate action framework",
+    "publishDate": "2024-01-15T08:45:00Z",
+    "author": "Michael Chen",
+    "tags": ["climate", "environment", "politics"],
+    "category": "Environment",
+    "url": "https://bbc.com/article-2"
+  },
+  {
+    "Id": 3,
+    "sourceId": 4,
+    "sourceName": "Reuters",
+    "title": "Stock markets rally on positive economic data",
+    "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "summary": "Markets surge following better-than-expected GDP figures",
+    "publishDate": "2024-01-15T07:20:00Z",
+    "author": "David Williams",
+    "tags": ["finance", "markets", "economy"],
+    "category": "Finance",
+    "url": "https://reuters.com/article-3"
+  },
+  {
+    "Id": 4,
+    "sourceId": 5,
+    "sourceName": "The Verge",
+    "title": "New smartphone features revolutionary camera technology",
+    "content": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "summary": "Latest device introduces breakthrough imaging capabilities",
+    "publishDate": "2024-01-15T06:15:00Z",
+    "author": "Emma Davis",
+    "tags": ["smartphone", "camera", "technology"],
+    "category": "Technology",
+    "url": "https://theverge.com/article-4"
+  },
+  {
+    "Id": 5,
+    "sourceId": 1,
+    "sourceName": "TechCrunch",
+    "title": "Cybersecurity firm goes public with $2B valuation",
+    "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    "summary": "Security company launches IPO amid growing demand",
+    "publishDate": "2024-01-15T05:30:00Z",
+    "author": "Alex Thompson",
+    "tags": ["cybersecurity", "IPO", "valuation"],
+    "category": "Business",
+    "url": "https://techcrunch.com/article-5"
+  },
+  {
+    "Id": 6,
+    "sourceId": 2,
+    "sourceName": "BBC News",
+    "title": "Breakthrough in renewable energy storage announced",
+    "content": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.",
+    "summary": "New battery technology promises longer energy storage",
+    "publishDate": "2024-01-15T04:45:00Z",
+    "author": "Lisa Rodriguez",
+    "tags": ["renewable", "energy", "battery"],
+    "category": "Science",
+    "url": "https://bbc.com/article-6"
+  }
+]
